@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "policy": "dsh-plugin-naming/v1",
+  "plugin": {
+    "namespace": "dshx",
+    "name": "subagent-model-sync",
+    "coordinate": "dshx/subagent-model-sync",
+    "packageName": "dshx-subagent-model-sync"
+  },
+  "names": {
+    "pluginNames": ["dshx-subagent-model-sync"],
+    "loaderIds": ["dshx-subagent-model-sync"],
+    "services": [],
+    "tools": [],
+    "commands": ["subagent-model-sync"],
+    "skills": [],
+    "skillProviders": [],
+    "events": [],
+    "settingsNamespaces": ["dshx-subagent-model-sync"],
+    "routes": []
+  }
+}

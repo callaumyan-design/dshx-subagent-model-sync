@@ -1,0 +1,37 @@
+{
+  "name": "dshx-subagent-model-sync",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sync the official subagent model-selection allowlist from selected LLM providers' live catalogs. Pick providers (e.g. openai); every registered model under them joins the allowlist for NEW sessions. Manual entries are preserved; only plugin-managed entries are ever withdrawn.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis"
+  ],
+  "author": "callaumyan-design",
+  "license": "MIT",
+  "homepage": "https://github.com/callaumyan-design/dshx-subagent-model-sync#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callaumyan-design/dshx-subagent-model-sync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/callaumyan-design/dshx-subagent-model-sync/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "node test/sync-core.test.mjs && node test/engine.test.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./sync-core": "./sync-core.js",
+    "./engine": "./engine.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
